@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('style/task_form.css') }}" rel="stylesheet">
+{% endblock %}
+{% block title %}Task Add{% endblock %}
+{% block body %}
+    <h2 class="centered-title">Add your own feedback</h2>
+
+    {{ form_start(form_add, {'attr': {'class': 'task-form'}}) }}
+    {{ form_row(form_add.title, {'attr': {'class': 'form-control'}}) }}
+    {{ form_row(form_add.description, {'attr': {'class': 'form-control'}}) }}
+    {{ form_row(form_add.submit, {'attr': {'class': 'btn submit-btn'}}) }}
+    {{ form_end(form_add) }}
+{% endblock %}

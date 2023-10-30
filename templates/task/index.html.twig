@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link href="{{ asset('style/table.css') }}" rel="stylesheet">
+{% endblock %}
+{% block title %}Task Panel{% endblock %}
+
+{% block body %}
+    <section class="container">
+        <h1>Hello {{ User.name }}</h1>
+        <p>Your tasks:</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for task in Tasks %}
+                <tr>
+                    <td>{{ task.title }}</td>
+                    <td>{{ task.description }}</td>
+                    <td class="{% if task.status == 'Active' %}active{% elseif task.status == 'Completed' %}completed{% elseif task.status == 'Overdue' %}overdue{% endif %}">
+                        {{ task.status }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <p>Want to add a new task?</p>
+        <a href="{{ path('add_task') }}" class="task-link">Add</a>
+    </section>
+{% endblock %}

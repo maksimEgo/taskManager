@@ -19,6 +19,9 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
-
+    App\Menu\Builder:
+        public: true
+        tags:
+            - { name: 'knp_menu.menu_builder', method: 'createMainMenu', alias: 'main' }
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

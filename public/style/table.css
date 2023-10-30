@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4a4a4a;
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+table th {
+    background-color: #e7e7e7;
+    color: #4a4a4a;
+}
+
+.active {
+    background-color: #c1ffc1;
+}
+
+.completed {
+    background-color: #c9e1ff;
+}
+
+.overdue {
+    background-color: #ffc1c1;
+}
+
+.task-link {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.task-link:hover {
+    background-color: #357ab6;
+}

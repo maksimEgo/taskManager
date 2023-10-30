@@ -1,0 +1,28 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+header a {
+    color: #4a4a4a; /* Черный цвет по умолчанию для лучшей видимости */
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px; /* Small padding for hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+header a:hover {
+    background-color: #4a90e2; /* Blue background on hover for a reversed effect. */
+    color: #ffffff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+title {
+    color: #4a4a4a; /* Matching with the table text color. */
+}
+
+

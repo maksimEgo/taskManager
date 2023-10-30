@@ -1,0 +1,51 @@
+/* General styles for the form and its elements */
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.login-form label {
+    display: block;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-form button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #357ab6;
+}
+
+/* Error message styling */
+.login-form > div {
+    margin-bottom: 15px;
+    color: #e74c3c;
+    background-color: #ffc1c1; /* Light red for better visibility */
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
